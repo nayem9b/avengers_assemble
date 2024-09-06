@@ -13,8 +13,8 @@ main proc
     mov ax,@data
     mov ds,ax
     
-    mov ah,9
-    lea dx,a
+    mov ah,9    ;to show "Enter a char" in output display
+    lea dx,a    ;to show user friendly message we use dx as it can hold long string
     int 21h
     
     mov ah,1
@@ -25,7 +25,7 @@ main proc
     mov ah,2
     mov dl,10
     int 21h 
-    mov dl,13
+    mov dl,13   ; carraige return
     int 21h 
     ;newline
     
