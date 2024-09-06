@@ -23,7 +23,7 @@ main proc
     jb check_uppercase
     cmp bl, 'z'
     ja check_uppercase
-    sub bl, 32
+    sub bl, 32   ;substruction operation
     jmp display
     
 check_uppercase:

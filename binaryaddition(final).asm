@@ -16,7 +16,7 @@ main proc
     ; Addition
     mov al, num2
     mov bl, num1
-    add bl, al
+    add bl, al  ;bl=bl+al
     
     mov cx, 8
 print_addition: 
